@@ -3,7 +3,7 @@
 const express = require("express");
 const app = express();
 
-const VERSION = 3;
+const VERSION = 4;
 
 app.get("/", (req, res) => {
   res.send(`Current version: ${VERSION}`);
@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 app.get("/greet", (req, res) => {
   const name = req.query.name;
 
-  res.send(`Hello, ${name}!`);
+  res.send(`Hello Baby ${name}!`);
 });
 
 const port = 8080;
